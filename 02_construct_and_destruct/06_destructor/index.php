@@ -11,6 +11,7 @@ class Human
         echo "name = {$this->name}, age = {$this->age}, weight = {$this->weight}, <br>";
     }
 
+    // destructor doesn’t accept any argument.
     public function __destruct()
     {
         echo 'the end of this object <br>';
@@ -30,21 +31,11 @@ class Child extends Human
 }
 
 
-
-
-
 $ahmed = new Human('ahmed', 20, 181);
 $ahmed->printDetails();
 
-$hussein = new Human('hussein', 31, 165);
-$hussein->printDetails();
-
-
-// $adam = new Child('Adam', 9, 130);
 $adam = new Child('Adam', 9, 130, 'Almohamadia');
 $adam->printDetails();
-
-
 
 
 // PHP automatically invokes __destruct() when the object is no longer in use.

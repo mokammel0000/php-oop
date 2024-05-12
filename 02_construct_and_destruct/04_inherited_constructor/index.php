@@ -15,7 +15,6 @@ class Human
 class Child extends Human
 {
     // override the base constructor
-    // override the base constructor
     public function __construct(public string $name, public int $age, public float $weight, public string $school)
     {
     }

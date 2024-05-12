@@ -13,10 +13,6 @@ class Human
         $this->weight = $weight;
     }
 
-    // public function __construct(public string $name, public int $age, public float $weight){
-        //مش لازم تعرف المتغيرات فوق حتي، هما بيتعرفوا من هنا
-    // }
-
     public function printDetails()
     {
         echo "name = {$this->name}, age = {$this->age}, weight = {$this->weight}, <br>";
