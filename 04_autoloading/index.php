@@ -1,4 +1,5 @@
 <?php
+
 function load_classes($class_name)
 {
     $file_path = "Classes/{$class_name}.php";
@@ -24,7 +25,7 @@ function load_services($class_name)
 
 // Loading Classes using spl autoload function:
 //--------------------------------------------------------------------------------
-// with spl_autoload_register(), you don't need to load classes manually, 
+// with spl_autoload_register(), you don't need to load classes manually,
 // they will be loaded automatically...
 
 spl_autoload_register('load_classes');

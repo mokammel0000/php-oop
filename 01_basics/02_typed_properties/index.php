@@ -22,10 +22,12 @@ class Human
         echo "his height is {$this->height} <br>";
     }
 }
-$ahmed = new Human();
-$ahmed->setDetails(name: 'ahmed', age: 19, height: 181.5);
-$ahmed->getDetails();
-
 $mohamed = new Human();
+
+echo '<pre>';
+var_dump($mohamed);  // typed properties = uninitialized - but has a type
+echo '</pre>';
+
+
 $mohamed->setDetails('mohamed', 33, "170.3");  // note that, PHP coerces the string to a float
 $mohamed->getDetails();
