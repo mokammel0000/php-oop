@@ -9,5 +9,3 @@ $my_car->accelerat();
 
 $my_car = new Car();
 $my_car->accelerat();
-
-

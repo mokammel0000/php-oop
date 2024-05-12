@@ -1,15 +1,15 @@
 <?php
 
+// declare(strict_types = 1);
+
 class Human
 {
-    public $name;
-    public $age;
-    public $height;
+    public string $name;
+    public int $age;
+    public float $height;
 
-    public function setDetails($name, $age, $height)
+    public function setDetails(string $name, int $age, float $height)
     {
-        // Human is a template, we need to create multiple objects from it,
-        // this refer to [[the current object]]
         $this->name = $name;
         $this->age = $age;
         $this->height = $height;
@@ -17,7 +17,6 @@ class Human
 
     public function getDetails()
     {
-        echo 'this is a human <br>';
         echo "his name is {$this->name} <br>";
         echo "his age is {$this->age} <br>";
         echo "his height is {$this->height} <br>";
@@ -26,3 +25,7 @@ class Human
 $ahmed = new Human();
 $ahmed->setDetails(name: 'ahmed', age: 19, height: 181.5);
 $ahmed->getDetails();
+
+$mohamed = new Human();
+$mohamed->setDetails('mohamed', 33, "170.3");  // note that, PHP coerces the string to a float
+$mohamed->getDetails();
