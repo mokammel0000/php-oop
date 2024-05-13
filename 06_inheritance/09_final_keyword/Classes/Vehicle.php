@@ -1,5 +1,6 @@
 <?php
 
+// final class Vehicle
 class Vehicle
 {
     public $modelNumber;

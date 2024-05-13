@@ -22,7 +22,7 @@ echo Employee::getCounter();
 
 
 $ahmed = new Employee();
-$ahmed->increaseCounter(); // static methods can be used from objects (not like properties)
+$ahmed->increaseCounter();
 $ahmed->getCounter();
 
 

@@ -2,18 +2,39 @@
 
 abstract class AbstractAnimal
 {
-    public $name;
+    protected $name;
+    protected $age;
+    protected $numberOfLimbs;
 
-    abstract public function eat();
+    public function eat()
+    {
+        echo 'this animal can eat <br>';
+    }
+
+    abstract public function voice();
 }
 
 class Dog extends AbstractAnimal
 {
-    
-    function eat()
+    public function voice()
     {
-        echo 'dog can eat <br>';
+        echo 'how how <br>';
     }
 }
 
+class Cat extends AbstractAnimal
+{
+    public function voice()
+    {
+        echo 'now now <br>';
+    }
+}
 
+$jack = new Dog();
+$jack->voice();
+$jack->eat();
+
+
+$kitty = new Cat();
+$kitty->voice();
+$kitty->eat();
