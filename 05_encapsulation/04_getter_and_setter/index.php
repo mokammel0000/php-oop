@@ -1,6 +1,6 @@
 <?php
 
-class Car
+class Mobile
 {
     public $color;
     private $serialNumber;
@@ -19,8 +19,8 @@ class Car
 }
 
 
-$myCar = new Car();
+$my_mob = new Mobile();
 
-$myCar->setSerialNumber('1234');
+$my_mob->setSerialNumber('1234');
 
-$myCar->getSerialNumber();
+$my_mob->getSerialNumber();
