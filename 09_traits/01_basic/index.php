@@ -1,16 +1,22 @@
 <?php
 
+// Traits can contain abstract methods
+
 trait CanFlyTrait
 {
+    // abstract public function fly()
     public function fly()
     {
         echo 'I can fly <br>';
     }
 }
 
+// A class can use multiple traits.
+
 class Bird
 {
     use CanFlyTrait;
+
     public function chirp()
     {
         echo 'bird can chirp <br>';
@@ -20,6 +26,7 @@ class Bird
 class Plane
 {
     use CanFlyTrait;
+
     public function engineNoise()
     {
         echo "Vroom vroom!\n";

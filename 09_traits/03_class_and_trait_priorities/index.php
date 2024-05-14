@@ -27,5 +27,8 @@ class Snowsnow extends Bird
 }
 
 
+$bird = new Bird();
+$bird->fly();
+
 $snowsnow = new Snowsnow();
 $snowsnow->fly();
