@@ -1,6 +1,6 @@
 <?php
 
-class Human
+class Person
 {
     private $name;
 
@@ -12,7 +12,7 @@ class Human
 
 
 
-$ahmed = new Human();
+$ahmed = new Person();
 $ahmed->school = 'Omar Makram';
 
 echo $ahmed->school;  // will deal with it as an existing property without any errors

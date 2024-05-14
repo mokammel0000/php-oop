@@ -1,13 +1,14 @@
 <?php
 
+// __clone  method allows you to define custom behavior for cloning an object
+// بتقول إيه الي عاوزه يحصل بالضبط لما نعمل كلون من الأوبجيكت ده
+
+
 class Human
 {
     public function __construct(public string $name, public int $age)
     {
     }
-
-    // __clone  method allows you to define custom behavior for cloning an object
-    // بتقول إيه الي عاوزه يحصل بالضبط لما نعمل كلون من الأوبجيكت ده
 
     public function __clone()
     {
@@ -18,7 +19,7 @@ class Human
 
 
 $first_person = new Human('ahmed', 22);
-$second_person = clone $first_person;  // cloning here will under using your conditions
+$second_person = clone $first_person;  // clone using your conditions
 
 // $first_person->name = 'mahmoud';
 // $second_person->name = 'hesham';
