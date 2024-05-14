@@ -1,9 +1,11 @@
-<?php 
+<?php
+
 
 require "Classes/Mysql.php";
 require "Classes/Postgres.php";
 
-$my_crud = new Postgres();
+// $my_crud = new Postgres();
+$my_crud = new Mysql();
 
 $my_crud->insert('users');
 $my_crud->update('users');

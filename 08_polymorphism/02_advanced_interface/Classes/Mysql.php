@@ -1,26 +1,24 @@
-<?php 
-
-include 'DBMSInterface/DBMSInterface.php';
+<?php
 
 class Mysql implements DBMSInterface
 {
-    public function insert($table)
+    public function insert()
     {
         echo "insert function implementation from Mysql <br>";
     }
-    
-    public function update($table)
+
+    public function update()
     {
         echo "update function implementation from Mysql <br>";
 
     }
-    
-    public function delete($table)
+
+    public function delete()
     {
         echo "delete function implementation from Mysql <br>";
     }
-    
-    public function show($table)
+
+    public function show()
     {
         echo "show function implementation from Mysql <br>";
     }
