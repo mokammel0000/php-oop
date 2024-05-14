@@ -8,9 +8,9 @@ class Employee
     public function __construct()
     {
         // calling static member inside the class itself:
-        self::$counter++;
+        // self::$counter++;
+        static::$counter++;
     }
-
 }
 
 // calling static member outside the class:
@@ -19,7 +19,7 @@ echo Employee::$counter . '<br>';
 
 
 $ahmed = new Employee();
-echo $ahmed::$counter;
+echo $ahmed::$counter . '<br>';
 
 $ahmed1 = new Employee();
 $ahmed2 = new Employee();

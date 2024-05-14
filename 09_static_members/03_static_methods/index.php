@@ -18,13 +18,11 @@ class Employee
 echo Employee::increaseCounter();
 
 echo Employee::getCounter();
-// static property can be called from the class --- it belongs to the class not to a specific object
+// static members can be called from the class --- it belongs to the class not to a specific object
 
 
 $ahmed = new Employee();
 $ahmed->increaseCounter();
 $ahmed->getCounter();
-
-
 
 echo Employee::getCounter();

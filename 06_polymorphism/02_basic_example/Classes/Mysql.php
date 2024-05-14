@@ -1,6 +1,5 @@
 <?php
 
-
 include 'DBMSInterface/DBMSInterface.php';
 
 class Mysql implements DBMSInterface
