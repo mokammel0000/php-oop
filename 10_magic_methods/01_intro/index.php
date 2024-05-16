@@ -28,15 +28,15 @@
  * __invoke(): is invoked when an object is called as a function
  *
  *
- *
- * __isset()
- * __unset()
- *
+ * // the following are covered in serialization tutorial:
  * __sleep()
  * __wakeup()
  *
  * __serialize()
  * __unserialize()
+ *
+ * __isset()
+ * __unset()
  *
  * __set_state()
  *

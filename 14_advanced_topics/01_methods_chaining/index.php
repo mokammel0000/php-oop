@@ -4,7 +4,7 @@
  *  each method must return the object itself (this) -> عشان الي بعدها تعرف تتنفذ
  */
 
-class User
+class Person
 {
     public $name;
     public $email;
@@ -23,15 +23,15 @@ class User
 
     public function save()
     {
-        echo "User is saved succesfully, name  = {$this->name}, email = {$this->email}";
+        echo "Person is saved succesfully, name  = {$this->name}, email = {$this->email}";
     }
 }
 
 
-$first_user = new User();
-// $first_user->setName('Ahmed');
-// $first_user->setEmail('ahmed@ahmed.com');
-// $first_user->save();
+$first_Person = new Person();
+// $first_Person->setName('Ahmed');
+// $first_Person->setEmail('ahmed@ahmed.com');
+// $first_Person->save();
 
 
-$first_user->setName('Ahmed')->setEmail('ahmed@ahmed.com')->save();
+$first_Person->setName('Ahmed')->setEmail('ahmed@ahmed.com')->save();
