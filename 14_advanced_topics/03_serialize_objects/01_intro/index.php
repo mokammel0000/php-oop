@@ -17,6 +17,10 @@
  * Objects that contain resources like file handles or database connections cannot be serialized.
  *
  *
+ * serialize() function creates a storable representation of an object,
+ * while the unserialize() function creates an object from the storable value.
+ *
+ *
  * serialize() function returns a string that contains a byte-stream representation of the object.
  * then you can store this string in storage such as a file or a database.
 
