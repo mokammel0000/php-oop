@@ -1,5 +1,7 @@
 <?php
 /**
+ * name collision = your code has different classes with the same name
+ *
  * namespace = مساحة عمل/ مساحة لتجميع الحاجات الي لها علاقة ببعض
  * you can group classes, interfaces, functions, and constants under a specific namespace,
  * which acts like a container for these elements.

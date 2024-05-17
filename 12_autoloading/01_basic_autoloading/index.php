@@ -16,7 +16,6 @@ function load_services($class_name)
     }
 }
 // Loading Classes by yourself:
-//--------------------------------------------------------------------------------
 // load_classes('Cat');
 // $kitty = new Cat();
 // $kitty->eat();
@@ -24,7 +23,6 @@ function load_services($class_name)
 
 
 // Loading Classes using spl autoload function:
-//--------------------------------------------------------------------------------
 // with spl_autoload_register(), you don't need to load classes manually,
 // they will be loaded automatically...
 
