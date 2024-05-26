@@ -1,0 +1,21 @@
+The Difference between Errors and Exceptions in PHP
+
+
+[Errors]: 
+    أخطاء في الكود نفسه، الإيرورز العادية خالص الي بتطلع من أي ديفيلوبر
+    e.g. syntax errors, runtime errors
+
+    starting from php 7.0, any error is represented by the `Error` class,
+
+[Exceptions]:
+    مشاكل بتحصل أثناء الرن تايم، الديفيلوبر لازم يهاندلها
+    e.g. open a file that doesn't exist, database connection or invalid user input.
+
+    PHP has a built-in Exception class,
+    and developers can create custom exception classes by extending `Exception`.
+
+
+
+Important Notes: 
+    -both of them implements Throwable interface.
+    -both of them can be handeled using try-catch block. 
