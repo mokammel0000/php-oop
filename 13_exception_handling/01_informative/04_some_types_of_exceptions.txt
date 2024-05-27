@@ -1,0 +1,53 @@
+Some Types of Exceptions in PHP: 
+
+    -[Exception]: 
+        The base class for all exceptions. 
+
+    -[LogicException]:
+        Represents errors in the program logic.
+        This is the base class for exceptions that represent programming logic errors.
+    
+    -[RuntimeException]:
+        Represents errors that can only be found on runtime.
+        This is the base class for exceptions that occur during the program execution.
+    
+    -[ErrorException]: 
+        Used to convert PHP errors into exceptions. 
+        Useful for handling traditional errors using exception handling mechanisms.
+
+    -[PDOException]: 
+        Thrown when a database-related error occurs in the PDO extension.
+
+    -[BadFunctionCallException]:
+        Thrown when a callback refers to an undefined function or if some arguments are missing.
+    
+    -[BadMethodCallException]:
+        Thrown when a callback refers to an undefined method or if some arguments are missing.
+        
+    -[InvalidArgumentException]:
+    Thrown when an argument is not of the expected type.
+
+    -[LengthException]:
+        Thrown when a length is invalid.
+    
+    -[DomainException]:
+        Specify a specific domain for a value (130 < human height < 250).
+
+    -[OutOfBoundsException]:
+        Thrown when an illegal index was requested.
+        This represents errors that should be detected at compile time.
+    
+    -[OutOfRangeException]:
+        Thrown when a value is not within the expected range.
+
+    -[OverflowException]:
+        Thrown when adding an element to a full container.
+    
+    -[UnderflowException]:
+        Thrown when performing an invalid operation on an empty container.
+    
+    -[UnexpectedValueException]:
+        Thrown when a value does not match with a set of values.
+    
+    -[Custom Exceptions]:
+        You can create your own Exception class by extending the Exception class or any of its subclasses.

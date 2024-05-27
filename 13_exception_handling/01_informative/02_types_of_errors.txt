@@ -1,14 +1,21 @@
 Types of errors in PHP: 
 
-    -Parse Errors(syntax errors): Syntax issues preventing script execution (missing ;).
+    -[Parse Errors(syntax errors)]: 
+        Syntax issues preventing script execution (missing ;).
 
-    -Fatal Errors: Critical issues stopping execution.
-        -Compile-time Fatal Errors: (calling a non-existent function).
-        -Runtime Fatal Errors: (running out of memory | typing errors).
+    -[Fatal Errors]: 
+        Critical issues stopping execution.
+            -Compile-time Fatal Errors: (calling a non-existent function).
+            -Runtime Fatal Errors: (running out of memory | typing errors).
     
-    -Warning Errors: Non-critical issues, execution continues (including not exist files).
-    -Notice Errors: Minor issues, execution continues (using an undefined variable).
+    -[Warning Errors]: 
+        Non-critical issues, execution continues (including not exist files).
+        
+    -[Notice Errors]: 
+        Minor issues, execution continues (using an undefined variable).
     
-    -Deprecated Errors: occur when using functions that are obsolete and will be removed in future PHP versions.
+    -[Deprecated Errors]: 
+        Occur when using functions that are obsolete and will be removed in future PHP versions.
     
-    -User Errors: Custom errors triggered by the user.
+    -[User Errors]: 
+        Custom errors triggered by the user.

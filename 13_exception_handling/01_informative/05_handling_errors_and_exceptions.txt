@@ -1,6 +1,6 @@
 The best practise is to do the following:
 
-use try-catch to handel errors and exceptions,
-use conditional statements in the program logic.
+use try-catch to (handel errors and exceptions),
+use conditional statements in the (program logic).
 
 (you can use if-else for error handeling but that isn't recommended).

@@ -1,0 +1,24 @@
+The standard PHP library (SPL) provides many subclasses of the Exception class: 
+Exception
+   ClosedGeneratorException
+   DOMException
+   ErrorException
+   IntlException
+   JsonException
+   LogicException
+      BadFunctionCallException
+         BadMethodCallException
+      DomainException
+      InvalidArgumentException
+      LengthException
+      OutOfRangeException
+   PharException
+   ReflectionException
+   RuntimeException
+      OutOfBoundsException
+      OverflowException
+      PDOException
+      RangeException
+      UnderflowException
+      UnexpectedValueException
+   SodiumException
