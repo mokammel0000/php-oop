@@ -1,8 +1,6 @@
 <?php
 
-// Throwable is an interface,
-// both Error and Exception classes implement this interface,
-// so you can use it as a general type of them, it can catch anyone of them.
+// Throwable is an interface: both Error and Exception classes implement this interface,
 
 // use \ before Throwable class: to match the global Throwable (PHP's built-in interface)
 // ده في حالة إنك عامل كلاس تاني بنفس الاسم مثلا وعاوز تحدد إنك عاوز بتاع اللغة
