@@ -1,12 +1,9 @@
 <?php
 
 /**
- * composer.json --> composer autoload-dump-> vendor/autoload.php
- * vendor/autoload.php (in this file all your program need to autoload files from different paths)
- *       you need to run composer autoload-dump each time you change anything in your app structur.
- * bootstrap.php --> use autoload.php to reqire any file you need.
- * index.php    --> use bootstrap.php to boot your app.
- *
+ * "PSR-4: Autoloader":
+ * describes a specification for autoloading classes from file paths,
+ * which makes it easier to organize and manage code in a standardized way.
  *
  * To comply with PSR-4, you need to structure the previous application like this:
  * .
@@ -20,9 +17,9 @@
  * ├── composer.json
  * └── index.php
  *
- * note that: User.php is under the Acme/Auth folder, and User class is namespaced with Acme/Auth
- * This  helps you find a class file more quickly by looking at its namespace...!!
  *
+ * Note: User.php is under the Acme/Auth folder, and User class is namespaced with Acme/Auth
+ *       this helps you find a class file more quickly by looking at its namespace...!!
  */
 
 require_once 'app/bootstrap.php';

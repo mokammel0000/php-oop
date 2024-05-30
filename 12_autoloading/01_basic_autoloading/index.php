@@ -15,12 +15,11 @@ function load_services($class_name)
         require $file_path;
     }
 }
+
 // Loading Classes by yourself:
 // load_classes('Cat');
 // $kitty = new Cat();
 // $kitty->eat();
-
-
 
 // Loading Classes using spl autoload function:
 // with spl_autoload_register(), you don't need to load classes manually,

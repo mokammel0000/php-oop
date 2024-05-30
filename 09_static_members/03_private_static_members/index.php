@@ -5,7 +5,7 @@ class App
 {
     private static $app = null; // the default is public
 
-    private function __construct()  // private construcotr, you can't use it -- only class itself can use it
+    private function __construct()  // private construcotr, you can't use it, only class itself can use it
     {
     }
 

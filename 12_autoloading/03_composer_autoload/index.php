@@ -1,26 +1,35 @@
 <?php
 
 /**
- * you can use Composer for autoloading classes.
- *
  * .
  * ├── app
  * │   ├── bootstrap.php
  * │   └── models
  * │       └── User.php
  * │       └── Comment.php
+ * |
+ * ├── vendor
+ * │   ├── composer
+ * |   └── autoload.php
+ * |
  * ├── composer.json
  * └── index.php
  *
+ * 1- put all your code in app folder.
+ * 2- add your classes path to composer.json file.
+ * 3- run composer dump-autoload: composer will generate a vendor folder.
+ * 4- autoload.php file in vendor: will load all classes from both app and external packages.
+ * 5- require the autoload.php file in the bootstrap.php file using the require_once construct.
+ * 6- require bootstrap file anywhere you need to use any class(userdefined or external).
  *
- * composer will load classes from models folder (you can add more folders to it).
- * run `composer dump-autoload` in you project terminal.
- * composer will generate a directory called vendor
- *  load the autoload.php file in the bootstrap.php file using the require_once construct:
+ * Notes:
+ *  -composer.json --> composer autoload-dump --> vendor/autoload.php
+ *  -you need to run composer autoload-dump each time you change anything in your app structur.
+ *  -bootstrap.php --> use autoload.php to reqire any file you need (also do another things).
+ *  -index.php     --> use bootstrap.php to boot your app.
  */
 
 require_once 'app/bootstrap.php';
-// bootstrap.php loading the autoload.php from vendor - so it loads all your dependancies.
 
 $ahmed = new User('ahmed123', 123);
 echo $ahmed->getUserName() . '<br>';
@@ -29,7 +38,3 @@ echo $ahmed->getPassword() . '<br>';
 
 $first_comment = new Comment('this is my first comment');
 echo $first_comment->getComment() . '<br>';
-
-// if you need to use a new class:
-// 1- add it to models folder (or even other model)
-// 2- run composer dump-autoload to add this class to autoload.php filr

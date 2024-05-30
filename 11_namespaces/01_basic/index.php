@@ -14,3 +14,6 @@ include "Model/Product.php";
 
 $ahmed = new Store\Model\Customer('ahmed');
 $ahmed->getCustomerName();
+
+$ali = new Store\Class\Customer(30);
+$ali->getCustomerAge();
